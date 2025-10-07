@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Auction 2025 Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('logo/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            flex-grow: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .logos img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .dashboard {
+            width: 1100px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dashboard h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 1.5rem;
+            color: #f8d90f;
+            padding: 10px 0;
+        }
+        iframe {
+            width: 1000px;
+            height: 600px;
+            border: none;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .top-left-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+        }
+        .footer {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+        .footer .icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .footer .icons a:hover {
+            color: #f8d90f;
+        }
+        @media (max-width: 768px) {
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+            .logos img {
+                width: 50px;
+                height: 50px;
+            }
+            .dashboard {
+                width: 100%;
+            }
+            .dashboard h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo/IPL_Logo.png" alt="IPL Logo" class="top-left-logo">
+
+    <div class="main-container">
+        <!-- Logos Section -->
+        <div class="logos">
+            <img src="logo/CSK.png" alt="CSK Logo">
+            <img src="logo/MI.png" alt="MI Logo">
+            <img src="logo/RCB.png" alt="RCB Logo">
+            <img src="logo/KKR.png" alt="KKR Logo">
+            <img src="logo/PBKS.png" alt="PBKS Logo">
+            <img src="logo/SRH.png" alt="SRH Logo">
+            <img src="logo/RR.png" alt="RR Logo">
+            <img src="logo/DC.png" alt="DC Logo">
+            <img src="logo/LSG.png" alt="LSG Logo">
+            <img src="logo/GT.png" alt="GT Logo">
+        </div>
+
+        <!-- Power BI Dashboard Section -->
+        <div id="dashboard" class="dashboard">
+            <h1>IPL Auction 2025 Dashboard</h1>
+            <iframe title="IPL2025 Auction DASHBOARD"
+                src="https://app.powerbi.com/view?r=eyJrIjoiZDllZjdlODItZDk2Ni00ODkwLTkzZjItY2U1YTEwZTM5M2ZkIiwidCI6IjM1MDM4M2M3LTlkNjQtNGEzMy04ZTZhLTViOTgwZDhiZDY2MiJ9"
+                frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/rashmeet-singh-763a06207/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/rashmeet03" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>© Rashmeet Singh</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
